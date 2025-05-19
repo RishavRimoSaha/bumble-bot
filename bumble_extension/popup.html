@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bumble Swiper</title>
+    <style>
+        body { width: 200px; text-align: center; font-family: sans-serif; }
+        button { margin: 5px; padding: 10px; width: 100px; cursor: pointer; }
+        #startBtn { background-color: #4CAF50; color: white; border: none; }
+        #stopBtn { background-color: #f44336; color: white; border: none; }
+        .stats { margin: 10px 0; padding: 10px; background: #f5f5f5; border-radius: 5px; text-align: left; }
+        .stats p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h3>Bumble Swiper</h3>
+    <div class="stats">
+        <p>Swipes: <span id="swipeCount">0</span></p>
+        <p>Duration: <span id="duration">0</span> seconds</p>
+        <p>Since last swipe: <span id="timeSinceLastSwipe">0</span> seconds</p>
+    </div>
+    <button id="startBtn">Start</button>
+    <button id="stopBtn" disabled>Stop</button>
+    <script src="popup.js"></script>
+</body>
+</html>
